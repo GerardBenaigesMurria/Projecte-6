@@ -5,12 +5,12 @@
 # Especificacions de entrada: 
 
 f = None
+
 try:
     f = open("missatge.txt", "r")
     contingut = f.read()
     print(contingut)
 
-    # Simulem un error
     a = 10 / 0     
 
 except Exception as e:
