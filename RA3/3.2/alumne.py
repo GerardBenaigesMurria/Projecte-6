@@ -8,12 +8,11 @@ class alumne:
     def __init__(self, edat):
         self.__edat = edat
     
-    @property
-    def edat(self):
+
+    def edat_get(self):
         return self.__edat
 
-    @edat.setter
-    def edat(self, valor):
+    def edat_set(self, valor):
         if valor >= 0:
             self.__edat = valor
         else:
