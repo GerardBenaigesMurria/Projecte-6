@@ -6,7 +6,7 @@
 
 class termostat:
     def __init__(self, temperatura):
-        self.temperatura = temperatura
+        self.__temperatura = temperatura
 
     @property
     def temperatura(self):
@@ -16,5 +16,6 @@ class termostat:
     def temperatura(self, valor):
         if 10 <= valor <= 30:
             self.__temperatura = valor
+
 
 
