@@ -6,14 +6,12 @@
 
 class sensor:
     def __init__(self, valor):
-        self.valor = valor  
+        self.__valor = valor  
 
-    @property
-    def valor(self):
+    def valor_get(self):
         return self.__valor
 
-    @valor.setter
-    def valor(self, nou_valor):
+    def valor_set(self, nou_valor):
         if 0 <= nou_valor <= 100:
             self.__valor = nou_valor
 
