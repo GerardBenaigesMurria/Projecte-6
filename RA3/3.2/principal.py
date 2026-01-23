@@ -47,11 +47,11 @@ print("Verificació amb antiga (esperat False):", usuari1.verificar_contrasenya(
 # Sensor amb valors limitats
 from sensor import sensor
 
-sensor1 = sensor(50)
-print(sensor1.valor)  
+sensor1 = sensor(40)
+print(sensor1.valor_get())  
 
-sensor1.valor = 80
-print(sensor1.valor) 
+sensor1.valor_set (80)
+print(sensor1.valor_get()) 
 
 # Producte amb preu controlat
 from producte import producte
@@ -77,7 +77,7 @@ print(rellotge1.mostrar_hora())
 from alumne import alumne
 
 alumne1 = alumne(14)
-print(alumne1.edat)
+print(alumne1.edat_get())
 
 # Gestor de puntuació
 from puntació import joc
@@ -96,4 +96,4 @@ print(joc1.puntuacio())
 from email import compteusuari
 
 usuari1 = compteusuari("gbenaiges@iesjulioantonio.cat")
-print(usuari1.email)
+print(usuari1.email_get())
